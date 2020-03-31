@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Canvas</title>
+</head>
+
+<body>
+	<canvas id="draw" width="800" height="800"></canvas>
+	<script>
+		const canvas = document.querySelector('#draw')
+    const ctx = canvas.getContext('2d') //part you actually draw on
+    canvas.width = window.innerWidth //full width
+    canvas.height = window.innerheight //full height
+    ctx.strokeStyle = "#BADA55" //default drawing color
+    ctx.lineJoin = "round" //when two lines meet
+    ctx.lineCap = "round" //end of the line
+
+    let isDrawing = false
+	</script>
+
+	<style>
+		html,
+		body {
+			margin: 0;
+		}
+	</style>
+
+</body>
+
+</html>
